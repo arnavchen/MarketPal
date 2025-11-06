@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarketPal.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ee97bd20075c25282aba9b11d386a8b1b83f06b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+04c961c7c4600259f131751721ac0f940d2f6c40")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarketPal.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarketPal.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

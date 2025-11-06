@@ -4,6 +4,7 @@ using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
+builder.Services.AddSingleton<MarketPal.Web.Services.StockService>();
 
 var app = builder.Build();
 

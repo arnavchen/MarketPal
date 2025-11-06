@@ -1,0 +1,62 @@
+@page "/MarketTracker"
+@model MarketPal.Web.Pages.MarketTrackerModel
+@{
+    ViewData["Title"] = "Market Tracker";
+}
+
+<h1>Market Tracker (Demo)</h1>
+
+<div class="tracker-grid">
+    <div class="card">
+        <h3>@Model.Symbol</h3>
+        <p><strong>Latest Close:</strong> @Model.LatestClose?.ToString("C") ?? "—"</p>
+        <p><strong>MA50:</strong> @Model.MA50?.ToString("C") ?? "—"</p>
+        <p><strong>MA200:</strong> @Model.MA200?.ToString("C") ?? "—"</p>
+        <p><strong>Signal:</strong> <span class="signal @Model.SignalClass">@Model.SignalLabel</span></p>
+        <p><strong>Volatility (ann.):</strong> @Model.VolatilityPercent?.ToString() ?? "—" %</p>
+        <p><strong>MA50 slope (10d):</strong> @Model.MA50SlopePercent?.ToString() ?? "—" %</p>
+        <p><strong>30d low / high:</strong> @Model.RecentLow?.ToString("C") ?? "—" / @Model.RecentHigh?.ToString("C") ?? "—"</p>
+
+        <div class="mt-3">
+            <h5>Recommendation</h5>
+            <p class="@Model.RecommendationClass">@Model.RecommendationText</p>
+        </div>
+    </div>
+
+    <div class="card chart-card">
+        <canvas id="priceChart" width="800" height="300"></canvas>
+    </div>
+</div>
+
+<section class="mt-3">
+    <h4>About the indicators</h4>
+    <p>This page demonstrates simple moving averages (MA) and how they can be used to visualize market momentum. It uses synthetic demo data so you can experiment without API keys.</p>
+
+    <h5>What is a moving average?</h5>
+    <p>A moving average smooths daily price changes by averaging the closing prices over a period of days. MA50 averages the most recent 50 daily closes. MA200 averages the most recent 200 daily closes.</p>
+
+    <h5>How to interpret the signal</h5>
+    <ul>
+        <li><strong>BUY (green):</strong> MA50 &gt; MA200 — short-term trend above long-term trend, suggesting upward momentum.</li>
+        <li><strong>HOLD (yellow):</strong> MA50 &lt; MA200 — short-term trend below long-term trend, suggesting caution.</li>
+    </ul>
+
+    <h5>Important notes</h5>
+    <p class="text-muted">This tool is for educational visualization only and is not financial advice. Moving averages are lagging indicators and should be combined with other analysis. Always do your own research before making financial decisions.</p>
+</section>
+
+<script>
+    // Pass data to the chart helper
+    const trackerData = {
+        labels: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Labels)),
+        prices: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.Prices)),
+        ma50: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.MA50Series)),
+        ma200: @Html.Raw(System.Text.Json.JsonSerializer.Serialize(Model.MA200Series))
+    };
+
+    window.addEventListener('DOMContentLoaded', function () {
+        if (typeof renderStockChart === 'function') {
+            renderStockChart('priceChart', trackerData.labels, trackerData.prices, trackerData.ma50, trackerData.ma200);
+        }
+    });
+</script>

@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/chennamaneni.1/MarketPal/MarketPal.Web/Pages/MarketTracker.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTWFya2V0VHJhY2tlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/chennamaneni.1/MarketPal/MarketPal.Web/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

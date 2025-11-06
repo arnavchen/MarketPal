@@ -27,4 +27,5 @@
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/MarketPal.Web.pdb
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/MarketPal.Web.genruntimeconfig.cache
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/ref/MarketPal.Web.dll
-/Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/compressed/sxe9j8rtgd-py107whpy9.gz
+/Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/compressed/dvs48nurf6-0wnyvgcykn.gz
+/Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/compressed/sxe9j8rtgd-8ewlonsqfe.gz
