@@ -18,7 +18,6 @@
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/rjsmrazor.dswa.cache.json
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/rjsmcshtml.dswa.cache.json
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/scopedcss/bundle/MarketPal.Web.styles.css
-/Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/compressed/sxe9j8rtgd-1da3lwp4a8.gz
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/staticwebassets.build.json
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/staticwebassets.build.json.cache
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/staticwebassets.development.json
@@ -28,3 +27,4 @@
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/MarketPal.Web.pdb
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/MarketPal.Web.genruntimeconfig.cache
 /Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/ref/MarketPal.Web.dll
+/Users/chennamaneni.1/MarketPal/MarketPal.Web/obj/Debug/net9.0/compressed/sxe9j8rtgd-py107whpy9.gz

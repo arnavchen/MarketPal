@@ -7,7 +7,12 @@
   --text:#e6eef6;
 }
 *{box-sizing:border-box}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0;background:linear-gradient(180deg,var(--bg),#071023);color:var(--text);-webkit-font-smoothing:antialiased}
+/* Ensure the page can stretch to full viewport height so footer sits at bottom */
+html, body { height: 100%; }
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0;min-height:100vh;display:flex;flex-direction:column;background:linear-gradient(180deg,var(--bg),#071023);color:var(--text);-webkit-font-smoothing:antialiased}
+
+/* Make the main content area expand to fill available vertical space */
+main { flex: 1; }
 .container{max-width:1100px;margin:0 auto;padding:24px}
 .site-header{border-bottom:1px solid rgba(255,255,255,0.03);}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
